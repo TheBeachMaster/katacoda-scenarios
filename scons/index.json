@@ -24,7 +24,7 @@
       "text": "finish.md"
     },
     "assets" : {
-      "host01" : [
+      "client" : [
         {
           "file": "scons/assets/lib/filewriter.cc",
           "target":"~/lib/filewriter.cc"
@@ -45,7 +45,10 @@
     }
   },
   "files":[
-    "SConstruct"
+    "~/SConstruct",
+    "~/main.cc",
+    "~/lib/filewriter.hpp",
+    "~/lib/filewriter.cc"
   ],
   "environment": {
     "uilayout": "editor-terminal",
