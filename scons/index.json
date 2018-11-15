@@ -1,0 +1,58 @@
+{
+  "title": "Building with SCons",
+  "description": "A walkthrough on how to setup SCons and Building applications with this fantasctic build tool",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData":"getWget.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets" : {
+      "client" : [
+        {
+          "file": "app/lib/filewriter.cc",
+          "target":"~/lib/"
+        },
+        {
+          "file":"app/lib/filewriter.hpp",
+          "target":"~/lib/"
+        },
+        {
+          "file":"app/main.cc",
+          "target":"~/"
+        },
+        {
+          "file":"app/SConstruct",
+          "target":"~/"
+        }
+      ]
+    }
+  },
+  "files":[
+    "SConstruct"
+  ],
+  "environment": {
+    "uilayout": "editor-terminal-split",
+    "hidefinish":true,
+    "uimessage":"This is where you'll be running all your commands.Have Fun! :)"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
