@@ -30,8 +30,8 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "hidefinish":true,
-    "uimessage1":"This is where you'll be running all your commands.Have Fun! :)"
+    "hidefinish":false,
+    "uimessage1": "\u001b[32mThis is where you'll be running all your commands.\r\nHave Fun :)\u001b[m\r\n"
   },
   "backend": {
     "imageid": "ubuntu"
