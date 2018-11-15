@@ -16,4 +16,8 @@ then
     exit 1
 fi
 
-mkdir -p lib
+mkdir -p sconsfileapp/lib
+touch sconsfileapp/lib/filewriter.cc
+touch sconsfileapp/lib/filewriter.hpp
+touch sconsfileapp/main.cc
+touch sconsfileapp/SConstruct

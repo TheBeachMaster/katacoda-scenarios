@@ -13,10 +13,26 @@ Let check if everything is working as expected  by creating a simple application
 `cd .. && scons -v`{{execute}}  
 
 `mkdir helloscons && \  
-cd helloscons && \
-echo '#include <stdio.h> int main(){ printf("Hello SCons\n");}' > app.c && \
-echo "Program('app.c')" > SConstruct && \
-scons`{{execute}}
+cd helloscons && \ touch app.c && \ touch SConstruct`{{execute}} 
+
+<pre class="file" data-filename="helloscons/app.c" data-target="replace">
+#include <stdio.h> 
+int main() {
+    printf("Hello Scons\n");
+}
+</pre>
+
+<pre class="file" data-filename="helloscons/SConstruct" data-target="replace">
+Program('app.c')
+</pre>
+ 
+Let's build
+
+`scons`{{execute}} 
+
+ 
+And execute 
+`./app`{{execute}}
 
 Let's clean that up now that we're sure SCons is working  
 `cd .. && rm -fr helloscons`{{execute}}
