@@ -17,3 +17,6 @@ cd helloscons && \
 echo '#include <stdio.h> int main(){ printf("Hello SCons\n");}' > app.c && \
 echo "Program('app.c')" > SConstruct && \
 scons` {{execute}}
+
+Let's clean that up now that we're sure SCons is working  
+`cd .. && rm -fr helloscons` {{execute}}
