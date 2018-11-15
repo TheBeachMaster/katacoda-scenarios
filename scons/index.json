@@ -26,19 +26,19 @@
     "assets" : {
       "client" : [
         {
-          "file": "app/lib/filewriter.cc",
+          "file": "scons/app/lib/filewriter.cc",
           "target":"~/lib/"
         },
         {
-          "file":"app/lib/filewriter.hpp",
+          "file":"scons/app/lib/filewriter.hpp",
           "target":"~/lib/"
         },
         {
-          "file":"app/main.cc",
+          "file":"scons/app/main.cc",
           "target":"~/"
         },
         {
-          "file":"app/SConstruct",
+          "file":"scons/app/SConstruct",
           "target":"~/"
         }
       ]
@@ -48,7 +48,7 @@
     "SConstruct"
   ],
   "environment": {
-    "uilayout": "editor-terminal-split",
+    "uilayout": "editor-terminal",
     "hidefinish":true,
     "uimessage":"This is where you'll be running all your commands.Have Fun! :)"
   },
