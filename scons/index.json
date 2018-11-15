@@ -1,6 +1,6 @@
 {
   "title": "Building with SCons",
-  "description": "A walkthrough on how to setup SCons and Building applications with this fantasctic build tool",
+  "description": "A walkthrough on how to setup SCons and Building assetslications with this fantasctic build tool",
   "details": {
     "steps": [
       {
@@ -26,19 +26,19 @@
     "assets" : {
       "client" : [
         {
-          "file": "scons/app/lib/filewriter.cc",
+          "file": "scons/assets/lib/filewriter.cc",
           "target":"~/lib/filewriter.cc"
         },
         {
-          "file":"scons/app/lib/filewriter.hpp",
+          "file":"scons/assets/lib/filewriter.hpp",
           "target":"~/lib/filewriter.hpp"
         },
         {
-          "file":"scons/app/main.cc",
+          "file":"scons/assets/main.cc",
           "target":"~/main.cc"
         },
         {
-          "file":"scons/app/SConstruct",
+          "file":"scons/assets/SConstruct",
           "target":"~/SConstruct"
         }
       ]
