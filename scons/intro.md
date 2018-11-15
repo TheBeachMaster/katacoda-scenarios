@@ -6,7 +6,7 @@ For more details see [SCons V3.0.1 Docs](https://scons.org/doc/production/HTML/s
 
 # Steps 
 
-1. Setting Up SCons (on Ubuntu)
+1. Setting Up and Testing SCons (on Ubuntu)
 2. Writing your application
 3. Building your application against SCons 
 4. Profit
