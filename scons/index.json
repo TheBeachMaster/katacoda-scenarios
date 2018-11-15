@@ -14,6 +14,10 @@
       {
         "title": "Step 3",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
       }
     ],
     "intro": {
@@ -27,7 +31,7 @@
   "environment": {
     "uilayout": "editor-terminal",
     "hidefinish":true,
-    "uimessage":"This is where you'll be running all your commands.Have Fun! :)"
+    "uimessage1":"This is where you'll be running all your commands.Have Fun! :)"
   },
   "backend": {
     "imageid": "ubuntu"

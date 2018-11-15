@@ -21,7 +21,7 @@ Create a simple HelloWorld app in file called `app.c`
 
 Then add SCons config file  
  
- `touch SConstruc`{{execute}}
+ `touch SConstruct`{{execute}}
 
 
 Then open the file under `helloscons/app.c` and paste the following
