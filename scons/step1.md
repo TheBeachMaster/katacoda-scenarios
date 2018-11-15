@@ -13,14 +13,28 @@ Let check if everything is working as expected  by creating a simple application
 `cd .. && scons -v`{{execute}}  
 
 `mkdir helloscons && \  
-cd helloscons && \ touch app.c && \ touch SConstruct`{{execute}} 
+cd helloscons`{{execute}}
+
+Create a simple HelloWorld app in file called `app.c` 
+
+`touch app.c`{{execute}}
+
+Then add SCons config file  
+ 
+ `touch SConstruc`{{execute}}
+
+
+Then open the file under `helloscons/app.c` and paste the following
 
 <pre class="file" data-filename="helloscons/app.c" data-target="replace">
-#include <stdio.h> 
+#include &ltstdio.h&gt 
 int main() {
     printf("Hello Scons\n");
 }
 </pre>
+
+ 
+Also open the file `helloscons/SConstruct` and paste the following  
 
 <pre class="file" data-filename="helloscons/SConstruct" data-target="replace">
 Program('app.c')
