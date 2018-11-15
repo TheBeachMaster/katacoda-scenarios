@@ -24,7 +24,7 @@
       "text": "finish.md"
     },
     "assets" : {
-      "client" : [
+      "host01" : [
         {
           "file": "scons/assets/lib/filewriter.cc",
           "target":"~/lib/filewriter.cc"
