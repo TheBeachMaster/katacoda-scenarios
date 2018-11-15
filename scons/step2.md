@@ -13,7 +13,7 @@ Our main app resides under `sconsfileapp`
  
 + Let create our libary headers and definitions under `sconsfileapp/lib/filewriter.hpp` and `sconsfileapp/lib/filewriter.cc` 
 
-Header file: 
+Header file: `sconsfileapp/lib/filewriter.hpp`
 
 <pre class="file" data-filename="sconsfileapp/lib/filewriter.hpp" data-target="replace"> 
 #ifndef FILEWRITER_H
@@ -33,7 +33,7 @@ public:
 #endif // !FILEWRITER_H 
 </pre>
 
-And then our library class file:
+And then our library class file: `sconsfileapp/lib/filewriter.cc`
 
 <pre class="file" data-filename="sconsfileapp/lib/filewriter.cc" data-target="replace"> 
 #include &ltfstream&gt

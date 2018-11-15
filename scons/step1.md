@@ -12,8 +12,7 @@ Then we'll install SCons using the following Python command
 Let check if everything is working as expected  by creating a simple application
 `cd .. && scons -v`{{execute}}  
 
-`mkdir helloscons && \  
-cd helloscons`{{execute}}
+`mkdir -p helloscons && cd helloscons`{{execute}}
 
 Create a simple HelloWorld app in file called `app.c` 
 
@@ -50,3 +49,6 @@ And execute
 
 Let's clean that up now that we're sure SCons is working  
 `cd .. && rm -fr helloscons`{{execute}}
+
+ 
+Close all open editors and move to the next exercise 
