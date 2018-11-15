@@ -27,19 +27,19 @@
       "client" : [
         {
           "file": "scons/app/lib/filewriter.cc",
-          "target":"~/lib/"
+          "target":"~/lib/filewriter.cc"
         },
         {
           "file":"scons/app/lib/filewriter.hpp",
-          "target":"~/lib/"
+          "target":"~/lib/filewriter.hpp"
         },
         {
           "file":"scons/app/main.cc",
-          "target":"~/"
+          "target":"~/main.cc"
         },
         {
           "file":"scons/app/SConstruct",
-          "target":"~/"
+          "target":"~/SConstruct"
         }
       ]
     }
