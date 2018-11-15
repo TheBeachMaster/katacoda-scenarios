@@ -22,26 +22,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets" : {
-      "client" : [
-        {
-          "file": "scons/assets/lib/filewriter.cc",
-          "target":"~/lib/filewriter.cc"
-        },
-        {
-          "file":"scons/assets/lib/filewriter.hpp",
-          "target":"~/lib/filewriter.hpp"
-        },
-        {
-          "file":"scons/assets/main.cc",
-          "target":"~/main.cc"
-        },
-        {
-          "file":"scons/assets/SConstruct",
-          "target":"~/SConstruct"
-        }
-      ]
     }
   },
   "files":[
