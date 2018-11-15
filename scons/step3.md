@@ -2,10 +2,10 @@
 
 Let's build our application 
  
- `scons` {{execute}} 
+ `scons`{{execute}} 
   
- `./main` {{execute}} 
+ `./main`{{execute}} 
 
-  `cat results.txt` {{execute}} 
+  `cat results.txt`{{execute}} 
 
  

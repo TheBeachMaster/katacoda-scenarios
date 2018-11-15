@@ -1,10 +1,10 @@
-# Intro
 
 This scenario takes you through the basics of using SCons as a build tool for your C/C++ application. 
  
 For more details see [SCons V3.0.1 Docs](https://scons.org/doc/production/HTML/scons-user.html)
 
-# Steps 
+You will learn the following 
+
 
 1. Setting Up and Testing SCons (on Ubuntu)
 2. Writing your application
