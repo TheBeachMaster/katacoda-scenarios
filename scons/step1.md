@@ -10,7 +10,7 @@ Then we'll install SCons using the following Python command
 `cd scons-3.0.1 && python setup.py install`{{execute}}
 
 Let check if everything is working as expected  by creating a simple application
-`cd .. && scons -V`{{execute}}  
+`cd .. && scons -v`{{execute}}  
 
 `mkdir helloscons && \  
 cd helloscons && \

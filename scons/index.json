@@ -18,18 +18,12 @@
     ],
     "intro": {
       "text": "intro.md",
-      "courseData":"getWget.sh"
+      "courseData":"setup.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
-  "files":[
-    "~/SConstruct",
-    "~/main.cc",
-    "~/lib/filewriter.hpp",
-    "~/lib/filewriter.cc"
-  ],
   "environment": {
     "uilayout": "editor-terminal",
     "hidefinish":true,

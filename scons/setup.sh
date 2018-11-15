@@ -2,7 +2,7 @@
 
 apt-get update 
 apt-get upgrade -y
-apt-get install apt-utils wget -y 
+apt-get install apt-utils build-essential wget -y 
 
 if ! hash python; then
     echo "Python is required to run some of these tests"
