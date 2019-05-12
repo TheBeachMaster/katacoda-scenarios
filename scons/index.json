@@ -1,27 +1,29 @@
 {
   "title": "Building with SCons",
+  "difficulty":"Intermediate",
   "description": "A walkthrough on how to setup SCons and Building assetslications with this fantasctic build tool",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Setting Up",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - Write Application",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3 - Build Application",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Step 4 - References",
         "text": "step4.md"
       }
     ],
     "intro": {
       "text": "intro.md",
+      "credits":"https://www.otienoken.me/build-tools/build-with-scons/",
       "courseData":"setup.sh"
     },
     "finish": {
