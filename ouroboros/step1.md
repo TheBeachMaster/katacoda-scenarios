@@ -1,4 +1,3 @@
-# Setting Up. 
 
 To work with [`Ouroboros`](https://github.com/pyouroboros/ouroboros) we need to first configure [Docker](https://www.docker.com/get-started) and [Docker-compose](https://docs.docker.com/compose/) 
 

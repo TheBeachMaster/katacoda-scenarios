@@ -5,32 +5,33 @@
     "details": {
       "steps": [
         {
-          "title": "Step 1",
+          "title": "Setting Up",
           "text": "step1.md"
         },
         {
-          "title": "Step 2",
+          "title": "Docker-compose setup",
           "text": "step2.md"
         },
         {
-          "title": "Step 3",
+          "title": "Start up the container",
           "text": "step3.md"
         },
         {
-          "title": "Step 4",
+          "title": "Build your app",
           "text": "step4.md"
         }
       ],
       "intro": {
         "text": "intro.md",
-        "credits":"https://www.otienoken.me/containers/updating-docker-containers-with-ouroboros/",
-        "courseData":"setup.sh"
+        "credits":"https://www.otienoken.me/containers/updating-docker-containers-with-ouroboros/"
       },
       "finish": {
         "text": "finish.md"
       }
     },
     "environment": {
+      "showdashboard": true,
+      "dashboards": [{"name": "View Page", "port": 3080}],
       "uilayout": "editor-terminal",
       "hidefinish":false,
       "uimessage1": "\u001b[32mThis is where you'll be running all your commands.\r\nHave Fun :)\u001b[m\r\n"

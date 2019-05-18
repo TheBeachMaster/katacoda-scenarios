@@ -1,9 +1,13 @@
-# Profit 
- 
-+ Remember to check out the [user guide](https://scons.org/doc/production/HTML/scons-user.html) 
+Let's clean-up that file  and start up a project. 
 
-+ Great resources in the [API](https://scons.org/doc/latest/HTML/scons-api/index.html) 
+Let's quickly clone a cool application that counts page views 
 
- Clean-up 
+`git clone https://github.com/TheBeachMaster/updating-with-ouroboros.git .`{{execute}} 
 
-  `scons -c`{{execute}}  
+Our cool application uses `redis` to store browser user agents and IPs. 
+
+Now let's start our application and view the app. 
+
+`docker-compose up -d`
+
+<pre>https://[[HOST_SUBDOMAIN]]-3080-[[KATACODA_HOST]].environments.katacoda.com</pre>

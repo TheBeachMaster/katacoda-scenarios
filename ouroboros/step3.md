@@ -1,13 +1,10 @@
-# Build Our Application 
+Let's run start the container. 
 
-Let's build our application 
-  
-  `cd sconsfileapp`{{execute}}
+`docker-compose up`{{execute}} 
 
- `scons`{{execute}} 
-  
- `./main`{{execute}} 
+Press `CTRL+c` __twice__ to exit. 
 
-  `cat results.txt`{{execute}} 
+To run the container in the background, add the `-d` flag. 
 
- 
+`docker-compose up -d`{{execte}} 
+

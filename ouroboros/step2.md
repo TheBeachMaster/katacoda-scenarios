@@ -1,10 +1,8 @@
-# Docker-compose setup 
-
 Let's create a `docker-compose.yml` file : 
 
 `touch docker-compose.yml`{{execute}}  
 
-Inside this file we'll add the following: 
+Inside this file we'll add the following (click on _Copy to Editor_): 
 
 <pre class="file" data-filename="docker-compose.yml" data-target="replace">
 version: '3'
