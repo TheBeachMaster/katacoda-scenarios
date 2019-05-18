@@ -1,178 +1,46 @@
-# Write your application 
+# Docker-compose setup 
 
-Let's inspect through our application.
- 
-Our main app resides under `sconsfileapp` 
+Let's create a `docker-compose.yml` file : 
 
-```shell  
-.
-../main.cc # Our Application
-../SConstruct # SCons config file
-../lib/ # Our standard C++ library header files 
-``` 
- 
-+ Let create our libary headers and definitions under `sconsfileapp/lib/filewriter.hpp` and `sconsfileapp/lib/filewriter.cc` 
+`touch docker-compose.yml`{{execute}}  
 
-Header file: `sconsfileapp/lib/filewriter.hpp`
+Inside this file we'll add the following: 
 
-<pre class="file" data-filename="sconsfileapp/lib/filewriter.hpp" data-target="replace"> 
-#ifndef FILEWRITER_H
-#define FILEWRITER_H
-
-class FileWriter
-{
-public:
-    FileWriter(){}
-    int add(int a, int b);
-    int sub(int a, int b);
-    int div(int a, int b);
-    int mult(int a, int b);
-    int sqr(int a);
-    void close();
-};
-#endif // !FILEWRITER_H 
+<pre class="file" data-filename="docker-compose.yml" data-target="replace">
+version: '3'
+services:
+  ouroboros:
+    container_name: ouroboros
+    hostname: ouroboros
+    image: pyouroboros/ouroboros
+    environment:
+      - CLEANUP=true
+      - INTERVAL=45
+      - LOG_LEVEL=info
+      - SELF_UPDATE=true
+      - TZ=Africa/Nairobi
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
 </pre>
 
-And then our library class file: `sconsfileapp/lib/filewriter.cc`
+## Tips: 
+Let's verif that `docker-compose.yml` file. 
 
-<pre class="file" data-filename="sconsfileapp/lib/filewriter.cc" data-target="replace"> 
-#include &ltfstream&gt
-#include "filewriter.hpp"
+`docker-compose config`{{execute}} 
 
-std::ofstream resultfile("results.txt");
+## Details 
 
-int FileWriter::add(int a, int b)
-{
-    int res;
-    if (resultfile.is_open())
-    {
-        res = a + b;
-        resultfile << "Addition \n" ;
-        resultfile << res << std::endl;
-    } else
-    {
-        res = 0;
-    }
-    return res;
-}
+In this configuration, we're pulling `Ouroboros` image from the official repo.  `image: pyouroboros/ouroboros`
 
-int FileWriter::div(int a, int b)
-{
-    int res;
-    if (resultfile.is_open())
-    {
-        res = a / b;
-        resultfile << "Division \n" ;
-        resultfile << res << std::endl;
-    } else
-    {
-        res = 0;
-    }
-    return res;
-}
+Next, we configure each update to remove old images `CLEANUP=true`.  
 
-int FileWriter::sub(int a, int b)
-{
-    int res;
-    if (resultfile.is_open())
-    {
-        res = a - b;
-        resultfile << "Subtraction \n" ;
-        resultfile << res << std::endl;
-    } else
-    {
-        res = 0;
-    }
-    return res;
-}
+We have configured updates to run after every 45 seconds `INTERVAL=45` 
 
-int FileWriter::mult(int a, int b)
-{
-    int res;
-    if (resultfile.is_open())
-    {
-        res = a * b;
-        resultfile << "Multiplication \n" ;
-        resultfile << res << std::endl;
-    } else
-    {
-        res = 0;
-    }
-    return res;
-}
+Timezone is set to `Nairobi`.
 
-int FileWriter::sqr(int a)
-{
-    int res;
-    if (resultfile.is_open())
-    {
-        res = a * a;
-        resultfile << "Squares \n" ;
-        resultfile << res << std::endl;
-    } else
-    {
-        res = 0;
-    }
-    return res;
-}
+The variable `SELF_UPDATE=true` ensures that Ouroboros updates itself as well. 
 
-void FileWriter::close()
-{
-    resultfile.close();
-}
-</pre>
+In the next session we'll try and spin up this image.  
 
-+ Open `sconsfileapp/main.cc` and paste the following
-
-<pre class="file" data-filename="sconsfileapp/main.cc" data-target="replace">
- 
-#include &ltiostream&gt
-#include "./lib/filewriter.hpp"
-
-FileWriter myWriter;
-
-int main()
-{
-    int a = 64;
-    int b = 8;
-    int divRes = myWriter.div(a,b);
-    int addRes = myWriter.add(a,b);
-    int subRes = myWriter.sub(a,b);
-    int multiRes = myWriter.mult(a,b);
-    int sqrRes = myWriter.sqr(a);
-        if (divRes = 0 && (b !=0 || a !=0))
-    {
-        std::cout << "There was an error in writing file" ;
-    }
-        if (addRes = 0 && (b > 0 && a > 0))
-    {
-        std::cout << "There was an error in writing file" ;
-    }
-        if (subRes = 0 && (a > 0))
-    {
-        std::cout << "There was an error in writing file" ;
-    }
-        if (multiRes = 0 && (b !=0 || a !=0))
-    {
-        std::cout << "There was an error in writing file" ;
-    }
-        if (sqrRes = 0 && (b !=0 || a !=0))
-    {
-        std::cout << "There was an error in writing file" ;
-    }
-        myWriter.close();
-
-    return 0;
-} 
-
-</pre> 
- 
-+ The open  `sconsfileapp/SConstruct` and paste the following
-
-<pre class="file" data-filename="sconsfileapp/SConstruct" data-target="replace">
-Library('filewriter',['./lib/filewriter.cc'])
-Program('main.cc', LIBS=['filewriter'], LIBPATH='.')
-</pre> 
- 
-+ Next, let's build our app  
- 
+Read On!! :)
