@@ -6,7 +6,7 @@ In this tutorial we'll setup Ouroboros to update our running Docker containers.
 
 + Set up Ouroboros  
 + Configure Docker compose for Ouroboros 
-+ Integrate Ouroboros with Slack for container updates 
++ Integrate Ouroboros with Slack for container updates notifications
 + Profit 
 
 ## Pre-requisites 

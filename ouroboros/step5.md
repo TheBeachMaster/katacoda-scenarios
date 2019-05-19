@@ -1,54 +1,19 @@
-# Setting Up SCons
+Now, let's open `ouroboros.env`, remember that Slack token in the format `https://hooks.slack.com/service/<TOKENA>/<TOKENB>/<TOKENC>` ? yeah, that one, add the following line under __line 27__ :
 
-We'll first download SCons v3.0.1  
-`wget http://prdownloads.sourceforge.net/scons/scons-3.0.1.tar.gz `{{execute}}  
- 
- Then unzip the downloaded artifact into any directory
- `tar -xzf scons-3.0.1.tar.gz`{{execute}} 
+`NOTIFIERS="slack://TOKENA/TOKENB/TOKENC/#CHANNEL` , replace the placeholders `TOKENA,TOKENB,TOKENC,CHANNEL` with their appropriate values.
 
-Then we'll install SCons using the following Python command 
-`cd scons-3.0.1 && python setup.py install`{{execute}}
+Unfortunately, I will not be updating `arthurkenotieno/site-counter-app` as regularly, feel free to fork to [the repo](https://github.com/TheBeachMaster/updating-with-ouroboros) like [so](https://github.com/TheBeachMaster/updating-with-ouroboros#updating) to see changes.
 
-Let check if everything is working as expected  by creating a simple application
-`cd .. && scons -v`{{execute}}  
+However, we can bring down the instances to and bring them back up to simulate the update.
 
-`mkdir -p helloscons && cd helloscons`{{execute}}
+Let do that. 
 
-Create a simple HelloWorld app in file called `app.c` 
+`docker-compose down`{{execute}} 
 
-`touch app.c`{{execute}}
+Then bring them back up. __Ensure you have updated the `ouroboros.env` file to see the changes.
 
-Then add SCons config file  
- 
- `touch SConstruct`{{execute}}
+`docker-compose up -d`{{execute}} 
 
+Head over to  you configured Slack channel to see the update. 
 
-Then open the file under `helloscons/app.c` and paste the following
-
-<pre class="file" data-filename="helloscons/app.c" data-target="replace">
-#include &ltstdio.h&gt 
-int main() {
-    printf("Hello Scons\n");
-}
-</pre>
-
- 
-Also open the file `helloscons/SConstruct` and paste the following  
-
-<pre class="file" data-filename="helloscons/SConstruct" data-target="replace">
-Program('app.c')
-</pre>
- 
-Let's build
-
-`scons`{{execute}} 
-
- 
-And execute 
-`./app`{{execute}}
-
-Let's clean that up now that we're sure SCons is working  
-`cd .. && rm -fr helloscons`{{execute}}
-
- 
-Close all open editors and move to the next exercise 
+Now everytime any of the images are updated in the Docker registry, Ouroboros will update the runnig instances and send a notification to your Slack channel.

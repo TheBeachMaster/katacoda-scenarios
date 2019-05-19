@@ -1,6 +1,10 @@
 Let's clean-up that file  and start up a project. 
 
-Let's quickly clone a cool application that counts page views 
+Let's quickly clone a cool application that counts page views.
+
+Let's clean up first `rm -fr *`{{execute}} 
+
+Close all open editors first to see the new changes.
 
 `git clone https://github.com/TheBeachMaster/updating-with-ouroboros.git .`{{execute}} 
 
@@ -10,6 +14,8 @@ Now let's start our application and view the app.
 
 `docker-compose up -d`{{execute}}
 
-Click on the `View Page` tab to see your application. 
+Click on the `View Page` tab to see our application. 
 
-Open the app with different browsers to see the numbers change.
+Open the app with different browsers and refresh to see the numbers change. 
+
+Now let's proceed and update our `ouroboros.env` to get Slack notifications after every update
