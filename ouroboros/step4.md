@@ -8,6 +8,8 @@ Our cool application uses `redis` to store browser user agents and IPs.
 
 Now let's start our application and view the app. 
 
-`docker-compose up -d`
+`docker-compose up -d`{{execute}}
 
-<pre>https://[[HOST_SUBDOMAIN]]-3080-[[KATACODA_HOST]].environments.katacoda.com</pre>
+Click on the `View Page` tab to see your application. 
+
+Open the app with different browsers to see the numbers change.
