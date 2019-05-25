@@ -14,7 +14,11 @@ Now let's start our application and view the app.
 
 `docker-compose up -d`{{execute}}
 
-Click on the `View Page` tab to see our application. 
+Click on the `View Page` tab to see our application.  
+
+The application is visible here : 
+
+https://[[HOST_SUBDOMAIN]]-3080-[[KATACODA_HOST]].environments.katacoda.com
 
 Open the app with different browsers and refresh to see the numbers change. 
 
