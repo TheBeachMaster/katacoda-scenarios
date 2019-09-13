@@ -3,9 +3,7 @@ To get started with [Atlassian Connect Express and Atlassian Connect CLI](https:
 Next you need to install the CLI that allows you to scaffold ACE applications: 
 
 `npm i -g atlas-connect`{{execute}}  
-
-> This has been done for you in this environment   
-
+  
 
 Next, we need to create new ACE application 
 
@@ -24,6 +22,14 @@ Enter into the created directory
 
 Install them as follows: 
 
-`yarn add sqlite`{{execute}} 
+`npm install --save sqlite`{{execute}} 
 
-`yarn add nodemon -D`{{execute}}
+`npm install -D nodemon`{{execute}}
+
+Next add the following line at the start of the `scripts` section of  `package.json` file 
+
+`"dev": "nodemon -r esm app.js",` 
+
+Finally run  
+
+`npm install`{{execute}}
