@@ -1,0 +1,42 @@
+{
+    "title": "Build Bitbucket addons",
+    "difficulty": "Advanced",
+    "description": "Building Bitbucket addons with Atlassian Connect",
+    "details": {
+      "steps": [
+        {
+          "title": "Getting Started",
+          "text": "getstarted.md"
+        },
+        {
+          "title": "Configuring your Addon",
+          "text": "configure.md"
+        },
+        {
+          "title": "Register your addon",
+          "text": "register.md"
+        },
+        {
+          "title": "Extending your addon",
+          "text": "extend.md"
+        }
+      ],
+      "intro": {
+        "text": "intro.md",
+        "credits":"https://www.otienoken.me/containers/updating-docker-containers-with-ouroboros/"
+      },
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "environment": {
+      "showdashboard": true,
+      "dashboards": [{"name": "View Page", "port": 3000}],
+      "uilayout": "editor-terminal",
+      "hidefinish":false,
+      "uimessage1": "\u001b[32mThis is where you'll be running all your commands.\r\nHave Fun :)\u001b[m\r\n"
+    },
+    "backend": {
+      "imageid": "node6"
+    }
+  }
