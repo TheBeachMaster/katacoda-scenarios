@@ -10,4 +10,26 @@ Now add this URL inside your `config.json` *development* section by replacing th
 ```json
  "localBaseUrl": "https://ngrok-url"
 ```  
-with your URL. 
+with your URL.  
+
+You need to create a `credentials.json`file to authenticate your addon. 
+
+<pre class="file" data-filename="credentials.jsoon" data-target="replace">
+{
+    "hosts": {
+        "connect-ace.atlassian.net": {
+            "product": "bitbucket",
+            "username": "",
+            "password": ""
+        }
+    }
+}
+</pre> 
+
+
+Otherwise you'll get the following error  
+![Auth Error](./assets/authorizationerrorfix.png) 
+
+Now to populate this you need to head over to [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens)
+
+Create a *New Token* and click on *View* and copy your API Token into the  password field of the `credentials.json` file. Your username is your email. 

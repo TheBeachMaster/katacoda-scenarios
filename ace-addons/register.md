@@ -1,3 +1,8 @@
+Let's change the application key inside `
+atlassian-connect.json` as well as the name.  
+
+> Without changing this, your app installation will fail 
+
 To start using your addon, navigate to your Bitbucket Settings page:
 ![Bitbucket Settings Page](./assets/BitBucketSettingNav.png) 
 
@@ -11,4 +16,9 @@ Next, paste the link https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environme
 into the input field.  
 
 ![Bitbucket Add Addon URL](./assets/BitbucketInputURL.png) 
+ 
+
+Now, back to our application, let's rename the pages and panels : 
+
+Under the `repoPages` section change the name to something unique. Like `Repo Pages`. 
 
