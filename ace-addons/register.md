@@ -3,7 +3,7 @@ atlassian-connect.json` as well as the name.
 
 > Without changing this, your app installation will fail 
 
-To start using your addon, navigate to your Bitbucket Settings page:
+To start using your add-on, navigate to your Bitbucket Settings page:
 ![Bitbucket Settings Page](./assets/BitBucketSettingNav.png) 
 
 Under *APPS AND FEATURES* , select *Installed apps* 
