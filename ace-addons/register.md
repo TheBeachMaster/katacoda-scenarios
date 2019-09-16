@@ -20,5 +20,5 @@ into the input field.
 
 Now, back to our application, let's rename the pages and panels : 
 
-Under the `repoPages` section change the name to something unique. Like `Repo Pages`. 
+Under the `repoPages` section inside `atlassian-connect.json` change the name to something unique. Like `Repo Pages`. 
 
