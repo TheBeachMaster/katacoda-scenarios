@@ -22,3 +22,5 @@ Now, back to our application, let's rename the pages and panels :
 
 Under the `repoPages` section inside `atlassian-connect.json` change the name to something unique. Like `Repo Pages`. 
 
+If you had done this tutorial before, you need to change the `key` and delete the app from Bitbucket apps.
+
