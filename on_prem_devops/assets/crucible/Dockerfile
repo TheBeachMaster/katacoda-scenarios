@@ -1,0 +1,25 @@
+FROM openjdk:8u232-slim
+
+RUN apt-get update -y && apt-get upgrade -y 
+RUN apt-get install wget curl tar unzip -y
+
+WORKDIR /cruciblehome
+WORKDIR /crucible
+
+WORKDIR /downloads
+RUN wget https://product-downloads.atlassian.com/software/crucible/downloads/crucible-4.7.2.zip
+
+RUN ls
+
+RUN unzip crucible-4.7.2.zip -d /crucible
+
+WORKDIR /crucible
+
+ENV FISHEYE_INST=cruciblehome
+
+RUN cp /crucible/fecru-4.7.2/config.xml /cruciblehome
+
+CMD [ "/crucible/fecru-4.7.2/bin/start.sh"]
+
+# TODO setup DB
+# TODO Configure Logging

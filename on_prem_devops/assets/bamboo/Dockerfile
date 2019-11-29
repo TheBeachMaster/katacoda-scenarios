@@ -1,0 +1,21 @@
+FROM openjdk:8u232-slim
+
+RUN apt-get update -y && apt-get upgrade -y 
+RUN apt-get install wget curl tar -y
+
+WORKDIR /bamboohome
+WORKDIR /bamboo
+
+WORKDIR /downloads
+RUN     curl -sSL  --progress-bar "https://product-downloads.atlassian.com/software/bamboo/downloads/atlassian-bamboo-6.10.3.tar.gz" \
+    | tar  -C /bamboo/ -xz 
+
+WORKDIR /bamboo
+RUN ls atlassian-bamboo-6.10.3
+COPY ./bamboo-init.properties /bamboo/atlassian-bamboo-6.10.3/atlassian-bamboo/WEB-INF/classes/
+#RUN sed 's+#bamboo.home=C:/bamboo/bamboo-home+bamboo.home=/bamboohome+g' ./atlassian-bamboo-6.10.3/atlassian-bamboo/WEB-INF/classes/bamboo-init.properties
+
+CMD [ "/bamboo/atlassian-bamboo-6.10.3/bin/start-bamboo.sh", "-fg"]
+
+# TODO setup DB
+# TODO Configure Logging

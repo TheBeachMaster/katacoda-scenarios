@@ -1,0 +1,72 @@
+{
+    "pathwayTitle": "DevOps",
+    "title": "Getting Started with Bamboo and Crucible",
+    "difficulty": "Advanced",
+    "description": "Setting up and Administering local Bamboo and Crucible server",
+    "time": "20-45 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Introduction to Bamboo",
+                "text": "step1.md"
+            },
+            {
+                "title": "Setting up Bamboo",
+                "text": "step2.md"
+            },
+            {
+                "title": "Configuring Bamboo",
+                "text": "step3.md"
+            },
+            {
+                "title": "Administering Bamboo",
+                "text": "step4.md"
+            },
+            {
+                "title": "Introduction to Crucible",
+                "text": "step5.md"
+            },
+            {
+                "title": "Setting up Crucible",
+                "text": "step6.md"
+            },
+            {
+                "title": "Configuring Crucible",
+                "text": "step7.md"
+            },
+            {
+                "title": "Administering Crucible",
+                "text": "step8.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "credits": ["www.otienoken.me", "https://aug.atlassian.com/nairobi/"],
+            "courseData": ["setup_dockerd.sh","setup.sh"],
+            "code": "check_services.sh"
+        },
+        "finish": {
+            "text":"finish.md",
+            "courseData":"shutdown.sh"
+        }
+    },
+    "environment": {
+        "showdashboard": true,
+        "dashboard": [
+            {
+                "name": "Crucible",
+                "port": 8060
+            },
+            {
+                "name": "Bamboo",
+                "port": 8085
+            }
+        ],
+        "uilayout": "editor-terminal",
+        "hidefinish": true,
+        "uimessage1": "\u001b[32mThis is where you'll be running all your commands.\r\nHave Fun :)\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}
