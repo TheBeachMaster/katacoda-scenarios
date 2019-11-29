@@ -58,7 +58,7 @@
     },
     "environment": {
         "showdashboard": true,
-        "dashboard": [
+        "dashboards": [
             {
                 "name": "Crucible",
                 "port": 8060
