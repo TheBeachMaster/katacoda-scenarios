@@ -41,8 +41,8 @@
         ],
         "intro": {
             "text": "intro.md",
-            "credits": ["www.otienoken.me", "https://aug.atlassian.com/nairobi/"],
-            "courseData": ["setup_dockerd.sh","setup.sh"],
+            "credits": "https://aug.atlassian.com/nairobi/",
+            "courseData": "setup_dockerd.sh",
             "code": "check_services.sh"
         },
         "finish": {

@@ -9,3 +9,6 @@ usermod -aG docker $(whoami)
 apt-get -y install python-pip
 
 pip install docker-compose 
+
+
+docker-compose up -d
