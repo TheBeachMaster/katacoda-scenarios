@@ -39,6 +39,12 @@
                 "text": "step8.md"
             }
         ],
+        "assets": {
+            "host01":[{
+                "file": "*",
+                "target": "/root"
+            }]
+        },
         "intro": {
             "text": "intro.md",
             "credits": "https://aug.atlassian.com/nairobi/",
