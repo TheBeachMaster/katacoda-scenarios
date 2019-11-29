@@ -1,14 +1,18 @@
 version: '3.1'
 
 services: 
+  # crucible:
+  #   build: 
+  #     context: .
+  #     dockerfile: Dockerfile-crucible
+  #   ports: 
+  #     - 8060:8060
+  #   environment: 
+  #     FISHEYE_HOME: /cruciblehome
   crucible:
-    build: 
-      context: .
-      dockerfile: Dockerfile-crucible
+    image: crucible blacklabelops/crucible
     ports: 
       - 8060:8060
-    environment: 
-      FISHEYE_HOME: /cruciblehome
   
   bamboo:
     build: 
