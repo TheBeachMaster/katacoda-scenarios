@@ -10,7 +10,7 @@ services:
   #   environment: 
   #     FISHEYE_HOME: /cruciblehome
   crucible:
-    image: crucible blacklabelops/crucible
+    image: blacklabelops/crucible
     ports: 
       - 8060:8060
   
