@@ -8,7 +8,7 @@ In this session we'll run Bamboo as a Docker container.
 
 To start, we'll bring up Bamboo with the following command
 
-`docker-compose up -d bamboo` {{execute}}
+`docker-compose up -d bamboo`{{execute}}
 
 This will bring up Bamboo with the default configurations.
 
