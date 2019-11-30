@@ -12,8 +12,8 @@ To start, we'll bring up Bamboo with the following command
 
 This will bring up Bamboo with the default configurations.
 
-Note that, it is import that the _bamboo-init.properties_ file be changed accordingly based on where the user would like Bamboo to store data.
+Note that, it is important that the _bamboo-init.properties_ file be changed accordingly based on where the user would like Bamboo to store data.
 
 See _Dockerfile-bamboo_ for details on how this has been done.
 
-Once Bamboo has been spun up, click on the link  https://[[HOST_SUBDOMAIN]]-3080-[[KATACODA_HOST]].environments.katacoda.com or click on the **Bamboo** tab on the terminal window to proceed with configurations.
+Once Bamboo has been spun up, click on the link  https://[[HOST_SUBDOMAIN]]-8085-[[KATACODA_HOST]].environments.katacoda.com or click on the **Bamboo** tab on the terminal window to proceed with configurations.
