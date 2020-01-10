@@ -1,7 +1,7 @@
 FROM openjdk:8u232-slim
 
 RUN apt-get update -y && apt-get upgrade -y 
-RUN apt-get install wget curl tar unzip -y
+RUN apt-get install wget curl tar git unzip -y
 
 # Crucible instance directory
 WORKDIR /cruciblehome

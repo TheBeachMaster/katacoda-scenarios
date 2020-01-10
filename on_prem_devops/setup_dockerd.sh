@@ -1,6 +1,7 @@
 #!/bin/bash
 
-apt-get update -y && apt-get upgrade -y  && apt-get install wget curl tar unzip -y
+apt-get update -y && apt-get upgrade -y  && apt-get install wget curl tar unzip  -y
+
 
 wget -qO- https://get.docker.com/ | sh 
 
@@ -11,4 +12,4 @@ apt-get -y install python-pip
 pip install docker-compose 
 
 
-docker-compose up -d
+docker-compose up -d bamboo
