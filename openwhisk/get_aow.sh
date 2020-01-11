@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get update && apt-get install -y lsof net-tools apt-get install default-jre
+apt-get update && apt-get install -y lsof net-tools default-jre
 
 echo "JAVA_HOME=\"/usr/lib/jvm/java-8-openjdk-amd64\"" >> /etc/environment
 
