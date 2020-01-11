@@ -1,6 +1,8 @@
 #!/bin/bash
 
-apt-get update && apt-get install lsof
+apt-get update && apt-get install -y lsof net-tools apt-get install default-jre
+
+echo "JAVA_HOME=\"/usr/lib/jvm/java-8-openjdk-amd64\"" >> /etc/environment
 
 mkdir -p openwhisk && cd openwhisk && git clone https://github.com/apache/openwhisk-devtools.git .
 cd ../
