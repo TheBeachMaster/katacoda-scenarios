@@ -1,0 +1,40 @@
+{
+    "pathwayTitle": "DevOps",
+    "title": "Getting Started with Apache OpenWhisk",
+    "difficulty": "Intermediate",
+    "description": "Deploying serverless applications on Apache Openwhisk",
+    "time": "5-10 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Deep dive",
+                "text": "step1.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "credits": "hhttps://ace.atlassian.com/events/details/atlassian-nairobi-presents-forge-2020-with-atlassian-marketplace-ace-nairobi-2020/",
+            "courseData": "get_aow.sh",
+            "code": "svc.sh"
+        },
+        "finish": {
+            "text":"finish.md",
+            "courseData":"shutdown.sh"
+        }
+    },
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [
+            {
+                "name": "Kafka",
+                "port": 8001
+            }
+        ],
+        "uilayout": "editor-terminal",
+        "hidefinish": true,
+        "uimessage1": "\u001b[32mThis is where you'll be running all your commands.\r\nHave Fun :)\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "docker"
+    }
+}
