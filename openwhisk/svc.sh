@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sleep 15 && cd ./openwhisk && make quick-start
+sleep 15 && cd ./openwhisk/docker-compose && make quick-start
