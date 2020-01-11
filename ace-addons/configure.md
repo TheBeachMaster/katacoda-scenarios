@@ -14,7 +14,7 @@ You need to create a `credentials.json`file to authenticate your addon.
 
 Open it and paste the following
 
-<pre class="file" data-filename="credentials.jsoon" data-target="replace">
+<pre class="file" data-filename="credentials.json" data-target="replace">
 {
     "hosts": {
         "connect-ace.atlassian.net": {
